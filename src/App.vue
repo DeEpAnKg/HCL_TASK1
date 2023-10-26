@@ -1,15 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+  <EmployeeForm v-bind="schema=employeeSchema" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import EmployeeForm from './EmployeeForm.vue';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    EmployeeForm
   }
 }
 </script>
